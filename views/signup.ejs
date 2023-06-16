@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- css link -->
+     <link rel="stylesheet" href="styles/home.css">
+     <link rel="stylesheet" href="styles/signup.css">
+     <!-- icon link -->
+     <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="signup">
+            <!-- header -->
+    <%-include("./pages/header.ejs")%>
+    <!-- header -->
+    <div class="signupmain">
+        <div class="form">
+            <h1>Admin Form</h1>
+            <form action="/signup"method="post">
+                <input type="text"name="name"placeholder="Enter Your Name"><br>
+                <input type="email"name="email"placeholder="Enter Your Email"><br>
+                <input type="password"name="password"placeholder="Enter Your Password"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <%-include("./pages/footer.ejs")%>
+</body>
+</html>
